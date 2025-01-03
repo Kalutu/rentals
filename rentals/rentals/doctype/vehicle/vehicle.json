@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_guest_to_view": 1,
  "allow_import": 1,
  "allow_rename": 1,
  "autoname": "autoincrement",
@@ -13,7 +14,9 @@
   "color",
   "column_break_xqob",
   "model",
-  "license_plate"
+  "license_plate",
+  "is_published",
+  "route"
  ],
  "fields": [
   {
@@ -59,11 +62,25 @@
    "fieldtype": "Data",
    "label": "Title",
    "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_published",
+   "fieldtype": "Check",
+   "label": "is Published"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route",
+   "no_copy": 1
   }
  ],
+ "has_web_view": 1,
  "index_web_pages_for_search": 1,
+ "is_published_field": "is_published",
  "links": [],
- "modified": "2025-01-03 18:29:33.918122",
+ "modified": "2025-01-04 00:24:57.279258",
  "modified_by": "Administrator",
  "module": "Rentals",
  "name": "Vehicle",
@@ -83,6 +100,7 @@
    "write": 1
   }
  ],
+ "route": "cabs",
  "show_title_field_in_link": 1,
  "sort_field": "creation",
  "sort_order": "DESC",

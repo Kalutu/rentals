@@ -1,0 +1,8 @@
+{% extends "templates/web.html" %} {% block page_content %}
+<h1>{{ title |e }}</h1>
+<h2>Color: {{color}}</h2>
+<a class="btn btn-info" href="/order-a-ride/new?vehicle={{doc.name}}">Book a Ride</a>
+
+{% endblock %}
+
+<!-- this is a sample default web page template -->

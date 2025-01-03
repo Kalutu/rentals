@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_guest_to_view": 1,
  "allow_import": 1,
  "allow_rename": 1,
  "autoname": "format:DR-{###}",
@@ -13,7 +14,9 @@
   "column_break_etkh",
   "license_number",
   "phone_number",
-  "profile_image"
+  "profile_image",
+  "is_published",
+  "route"
  ],
  "fields": [
   {
@@ -54,12 +57,25 @@
    "fieldtype": "Data",
    "label": "Full Name",
    "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_published",
+   "fieldtype": "Check",
+   "label": "is Published"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
   }
  ],
+ "has_web_view": 1,
  "image_field": "profile_image",
  "index_web_pages_for_search": 1,
+ "is_published_field": "is_published",
  "links": [],
- "modified": "2025-01-03 19:11:30.087229",
+ "modified": "2025-01-04 00:10:58.904191",
  "modified_by": "Administrator",
  "module": "Rentals",
  "name": "Driver",
@@ -79,6 +95,7 @@
    "write": 1
   }
  ],
+ "route": "cars",
  "show_title_field_in_link": 1,
  "sort_field": "creation",
  "sort_order": "DESC",
