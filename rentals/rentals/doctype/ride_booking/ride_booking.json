@@ -10,6 +10,7 @@
   "amended_from",
   "column_break_xftv",
   "driver",
+  "vehicle",
   "section_break_mmdx",
   "items",
   "section_break_woqe",
@@ -82,12 +83,19 @@
    "fieldname": "total_amount",
    "fieldtype": "Currency",
    "label": "Total Amount"
+  },
+  {
+   "fetch_from": "order.vehicle",
+   "fieldname": "vehicle",
+   "fieldtype": "Link",
+   "label": "Vehicle",
+   "options": "Vehicle"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-01-03 19:52:00.400517",
+ "modified": "2025-01-03 22:39:44.484299",
  "modified_by": "Administrator",
  "module": "Rentals",
  "name": "Ride Booking",
