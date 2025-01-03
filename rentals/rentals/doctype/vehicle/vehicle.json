@@ -63,7 +63,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-01-03 17:46:17.093252",
+ "modified": "2025-01-03 18:29:33.918122",
  "modified_by": "Administrator",
  "module": "Rentals",
  "name": "Vehicle",
@@ -83,7 +83,9 @@
    "write": 1
   }
  ],
+ "show_title_field_in_link": 1,
  "sort_field": "creation",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "title"
 }
