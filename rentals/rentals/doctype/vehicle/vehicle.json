@@ -7,6 +7,7 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "title",
   "make",
   "year",
   "color",
@@ -52,11 +53,17 @@
    "in_list_view": 1,
    "label": "License Plate",
    "reqd": 1
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-01-02 19:42:59.106321",
+ "modified": "2025-01-03 17:46:17.093252",
  "modified_by": "Administrator",
  "module": "Rentals",
  "name": "Vehicle",
