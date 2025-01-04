@@ -1,0 +1,27 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2025-01-04 12:32:51.797312",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letterhead": null,
+ "modified": "2025-01-04 12:32:51.797312",
+ "modified_by": "Administrator",
+ "module": "Rentals",
+ "name": "Revenue By Make",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Vehicle",
+ "report_name": "Revenue By Make",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "timeout": 0
+}
