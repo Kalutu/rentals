@@ -35,8 +35,7 @@
    "fieldname": "last_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Last Name",
-   "reqd": 1
+   "label": "Last Name"
   },
   {
    "fieldname": "license_number",
@@ -75,7 +74,7 @@
  "index_web_pages_for_search": 1,
  "is_published_field": "is_published",
  "links": [],
- "modified": "2025-01-04 00:10:58.904191",
+ "modified": "2025-01-06 16:52:01.544242",
  "modified_by": "Administrator",
  "module": "Rentals",
  "name": "Driver",
