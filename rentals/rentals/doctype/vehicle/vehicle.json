@@ -1,135 +1,172 @@
 {
- "actions": [],
- "allow_guest_to_view": 1,
- "allow_import": 1,
- "allow_rename": 1,
- "autoname": "autoincrement",
- "creation": "2025-01-02 17:12:25.961322",
- "doctype": "DocType",
- "engine": "InnoDB",
- "field_order": [
-  "title",
-  "make",
-  "year",
-  "color",
-  "insurance_expiry",
-  "column_break_xqob",
-  "model",
-  "license_plate",
-  "is_published",
-  "route",
-  "vehicle_image",
-  "status",
-  "condition"
- ],
- "fields": [
-  {
-   "fieldname": "make",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Make",
-   "reqd": 1
-  },
-  {
-   "fieldname": "year",
-   "fieldtype": "Int",
-   "in_list_view": 1,
-   "label": "Year",
-   "non_negative": 1,
-   "reqd": 1
-  },
-  {
-   "fieldname": "color",
-   "fieldtype": "Data",
-   "label": "Color"
-  },
-  {
-   "fieldname": "column_break_xqob",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "model",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Model",
-   "reqd": 1
-  },
-  {
-   "fieldname": "license_plate",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "License Plate",
-   "reqd": 1
-  },
-  {
-   "fieldname": "title",
-   "fieldtype": "Data",
-   "label": "Title",
-   "read_only": 1
-  },
-  {
-   "default": "0",
-   "fieldname": "is_published",
-   "fieldtype": "Check",
-   "label": "is Published"
-  },
-  {
-   "fieldname": "route",
-   "fieldtype": "Data",
-   "label": "Route",
-   "no_copy": 1
-  },
-  {
-   "fieldname": "insurance_expiry",
-   "fieldtype": "Date",
-   "label": "Insurance Expiry",
-   "reqd": 1
-  },
-  {
-   "fieldname": "vehicle_image",
-   "fieldtype": "Attach Image",
-   "label": "Vehicle Image"
-  },
-  {
-   "fieldname": "status",
-   "fieldtype": "Select",
-   "label": "Status",
-   "options": "Active\nOut Of Service\nSold\nCrashed"
-  },
-  {
-   "fieldname": "condition",
-   "fieldtype": "Rating",
-   "label": "Condition"
-  }
- ],
- "has_web_view": 1,
- "index_web_pages_for_search": 1,
- "is_published_field": "is_published",
- "links": [],
- "modified": "2025-01-04 11:54:42.070341",
- "modified_by": "Administrator",
- "module": "Rentals",
- "name": "Vehicle",
- "naming_rule": "Autoincrement",
- "owner": "Administrator",
- "permissions": [
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "System Manager",
-   "share": 1,
-   "write": 1
-  }
- ],
- "route": "cabs",
- "show_title_field_in_link": 1,
- "sort_field": "creation",
- "sort_order": "DESC",
- "states": [],
- "title_field": "title"
+  "actions": [],
+  "allow_guest_to_view": 1,
+  "allow_import": 1,
+  "allow_rename": 1,
+  "autoname": "autoincrement",
+  "creation": "2025-01-02 17:12:25.961322",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "title",
+    "make",
+    "year",
+    "color",
+    "insurance_expiry",
+    "column_break_xqob",
+    "audit_completed",
+    "model",
+    "license_plate",
+    "is_published",
+    "route",
+    "vehicle_image",
+    "status",
+    "condition"
+  ],
+  "fields": [
+    {
+      "fieldname": "make",
+      "fieldtype": "Data",
+      "in_list_view": 1,
+      "label": "Make",
+      "reqd": 1
+    },
+    {
+      "fieldname": "year",
+      "fieldtype": "Int",
+      "in_list_view": 1,
+      "label": "Year",
+      "non_negative": 1,
+      "reqd": 1
+    },
+    {
+      "fieldname": "color",
+      "fieldtype": "Data",
+      "label": "Color"
+    },
+    {
+      "fieldname": "column_break_xqob",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "model",
+      "fieldtype": "Data",
+      "in_list_view": 1,
+      "label": "Model",
+      "reqd": 1
+    },
+    {
+      "fieldname": "license_plate",
+      "fieldtype": "Data",
+      "in_list_view": 1,
+      "label": "License Plate",
+      "reqd": 1
+    },
+    {
+      "fieldname": "title",
+      "fieldtype": "Data",
+      "label": "Title",
+      "read_only": 1
+    },
+    {
+      "default": "0",
+      "fieldname": "is_published",
+      "fieldtype": "Check",
+      "label": "is Published"
+    },
+    {
+      "fieldname": "route",
+      "fieldtype": "Data",
+      "label": "Route",
+      "no_copy": 1
+    },
+    {
+      "fieldname": "insurance_expiry",
+      "fieldtype": "Date",
+      "label": "Insurance Expiry",
+      "reqd": 1
+    },
+    {
+      "fieldname": "vehicle_image",
+      "fieldtype": "Attach Image",
+      "label": "Vehicle Image"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Active\nOut Of Service\nSold\nCrashed"
+    },
+    {
+      "fieldname": "condition",
+      "fieldtype": "Rating",
+      "label": "Condition"
+    },
+    {
+      "default": "0",
+      "fieldname": "audit_completed",
+      "fieldtype": "Check",
+      "label": "Audit Completed?",
+      "permlevel": 1
+    }
+  ],
+  "has_web_view": 1,
+  "index_web_pages_for_search": 1,
+  "is_published_field": "is_published",
+  "links": [],
+  "modified": "2025-01-06 13:17:25.384210",
+  "modified_by": "Administrator",
+  "module": "Rentals",
+  "name": "Vehicle",
+  "naming_rule": "Autoincrement",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    },
+    {
+      "create": 1,
+      "export": 1,
+      "read": 1,
+      "report": 1,
+      "role": "Vehicle Manager",
+      "write": 1
+    },
+    {
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "Vehicle Auditor",
+      "share": 1,
+      "write": 1
+    },
+    {
+      "email": 1,
+      "export": 1,
+      "permlevel": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "Vehicle Auditor",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "route": "cabs",
+  "show_title_field_in_link": 1,
+  "sort_field": "creation",
+  "sort_order": "DESC",
+  "states": [],
+  "title_field": "title"
 }
