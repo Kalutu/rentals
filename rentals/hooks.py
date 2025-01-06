@@ -5,6 +5,8 @@ app_description = "Manage Rentals in Frappe"
 app_email = "kalutudaniel@gmail.com"
 app_license = "mit"
 
+fixtures = [{"dt":"Vehicle Type", "filters":{"is_standard": 1}}]
+
 # Apps
 # ------------------
 
